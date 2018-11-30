@@ -14,13 +14,30 @@ MITRE posted the results in great detail here, however, parsing the different JS
 
 ## MITRE Testing Methodology
 
-This round was described in [this document](https://attackevals.mitre.org/methodology/round1/) with all the deatials necessary to understand how the test lab was setup. Here's a glimpse of that:
+MITRE Testing Methodology was described in [this document](https://attackevals.mitre.org/methodology/) with all the deatials necessary to understand how the test lab was setup.
 
->Round 1 participation was defined by vendors who participated in our APT3 evaluations, whether they were part of the “initial cohort” or were included via subsequent “rolling” admissions. We included vendors that had executed contracts by June 29, 2018 in the initial cohort. This cohort had results released simultaneously to ensure fairness. After the initial cohort was executed, rolling admissions began. During rolling admissions, new vendors may participate, new versions of products may be tested, and previous vendors may be re-tested. We will formally close the round of APT3 testing when technical limitations make the test obsolete or unable to be executed, such as Windows version changes.
+### Detection Categorization
 
-<p align="center">
-  <img src="https://attackevals.mitre.org/theme/images/base_network.png">
-</p>
+**None**: The vendor is unable to detect red activity due to capability limitations or other reasons. If data is available that is not directly relevant to the procedure tested, this will be categorized as “None.” In these cases, a vendor may receive a categorization of “None” with additional notes and screenshots about that data.
+
+**Telemetry**: The capability produces some minimally processed data that is accessible to an end user and directly indicates that the red team activity occurred after the user performs human analysis. There is no evidence of complex logic or an advanced rule leading to the data output, and no labeling occurs other than simple field labeling. The detection needs to be demonstrably and logically related to the actual procedure performed. Proof of detection could include the view, query, or API search used to access the data and/or the detection output (e.g., table view or process tree).
+
+**Indicator Of Compromise (IOC)**: The vendor identifies the red team activity based on known hashes, IP addresses, C2 domain, tool names, tool strings, or module names. Proof of detection could include the rule name, API/query used to access the data, and/or detection output
+
+**Enrichment**: The capability captures data (usually data as described above in the “Telemetry Available” category) and then enriches it with additional information such as a rule name, labels, tags, or ATT&CK tactics or techniques that would assist in a user’s analysis of the data beyond what would have been originally presented.
+
+**General Behavior**: The capability produces an alert detection for suspicious or potentially malicious behavior based on some type of reported complex logic or rule (beyond a simple “if X, display Y Rule Name,” which would be categorized as Enrichment).
+
+**Specific Behavior**: The capability detects suspicious behavior based on some complex rule or logic and provides an ATT&CK “technique”-level description of the activity (beyond a simple “if X, display Y Rule Name,” which would be categorized as Enrichment).
+
+
+### Modifier Detection Types
+
+**Delayed**: The capability does not detect the activity in real-time or near-real-time when the red team executes the action, but subsequent alerts, data, enrichment, or additional processing produce a detection for the activity.
+
+**Tainted**: The capability detects the activity based on previously identified suspicious/malicious behavior that is related to or “tainted by” the detection.
+
+**Configuration Change**: A detection is made possible by a special configuration change or additional API access that allows data not normally accessible to the end user to become available.
 
 ## Prerequisites
 
