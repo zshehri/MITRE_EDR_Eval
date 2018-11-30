@@ -24,8 +24,8 @@ bash MITRE_EDR_eval_round1.sh
 
 ## Important Notes
 
-1- This is the first evaluation against MITRE EDR, specifically against [APT3](https://attack.mitre.org/groups/G0022/) threat group attack techniques. More tests will come, and probably more vendors as well. This repo will be updated once these reports are avaliable.
+1- This is the first EDR evaluation against MITRE ATT&CK, specifically against [APT3](https://attack.mitre.org/groups/G0022/) threat group attack techniques. More tests will come later, and probably against more vendors as well. This repo will be updated once these reports become avaliable.
 
-2- You have to read the entire page here [MITRE Evaluation](https://attackevals.mitre.org/evaluations.html), the high level analysis of the final metrics can significantly impact your analysis. The evaluation page has screenshots for all the products, and the exact finding to determine if that's something you'd be concerned about in your environment (YMMV).
+2- You have to read the entire page here [MITRE Evaluation](https://attackevals.mitre.org/evaluations.html), the high level analysis of the final metrics can significantly impact your analysis. The evaluation page has screenshots for all the products, and the exact findings to determine if that's something you'd be concerned about in your environment (YMMV).
 
 3- I'm not affiliated with MITRE or any EDR vendor, and take no responsibility or liability of the results/reports.
