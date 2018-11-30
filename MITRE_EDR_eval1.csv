@@ -1,0 +1,8 @@
+Vendor,None,Telemetry,IOC,GeneralBehavior,SpecificBehavior,Delayed,Tainted,ConfigChange,Enrichment
+CarbonBlack,35,213,0,5,29,0,0,0,113
+CounterTack,40,152,0,9,11,0,89,0,64
+CrowdStrike,31,207,0,144,60,87,79,0,14
+Endgame,35,180,0,35,49,49,150,0,59
+Microsoft,29,248,1,51,39,33,70,0,10
+RSA,62,160,0,0,0,0,0,0,1
+SentinelOne,37,207,0,5,0,0,91,0,10
