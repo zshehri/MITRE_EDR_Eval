@@ -14,7 +14,7 @@ MITRE posted the results in great detail here, however, parsing the different JS
 
 ## MITRE Testing Methodology
 
-This round was described in this document with all the deatials necessary to understand how the test lab was setup. Here's a glimpse of that:
+This round was described in [this document](https://attackevals.mitre.org/methodology/round1/) with all the deatials necessary to understand how the test lab was setup. Here's a glimpse of that:
 
 >Round 1 participation was defined by vendors who participated in our APT3 evaluations, whether they were part of the “initial cohort” or were included via subsequent “rolling” admissions. We included vendors that had executed contracts by June 29, 2018 in the initial cohort. This cohort had results released simultaneously to ensure fairness. After the initial cohort was executed, rolling admissions began. During rolling admissions, new vendors may participate, new versions of products may be tested, and previous vendors may be re-tested. We will formally close the round of APT3 testing when technical limitations make the test obsolete or unable to be executed, such as Windows version changes.
 
