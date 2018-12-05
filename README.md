@@ -6,10 +6,10 @@ MITRE recently published the results of their EDR evaluation (the very first rou
 
 ## Objectives
 
-MITRE posted the results in great detail here, however, parsing the different JSON report files is no fun. This script pulls the detection rate of the attack techniques on each product, and genearte a text & csv outputs.
+MITRE posted the results in great detail [here](https://attackevals.mitre.org), however, parsing the different JSON report files is no fun. This script pulls the detection rate of the attack techniques on each product, and genearte a text & csv outputs.
 
 <p align="center">
-  <img src="https://github.com/zshehri/MITRE_EDR_Eval/raw/master/output.png">
+  <img src="https://raw.githubusercontent.com/zshehri/MITRE_EDR_Eval/master/output.png">
 </p>
 
 ## MITRE Testing Methodology
